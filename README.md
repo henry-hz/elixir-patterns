@@ -1,6 +1,10 @@
 Elixir Patterns
 ===============
 
+## Concepts
+
+* [error definition](/concepts/ERRORS.md) - What are the definitions we have for
+    errors and how it changes our code
 
 
 ## Exceptions

@@ -74,13 +74,13 @@ def create(params) do
     end
   end
 
-  defp parse_dob(nil), do: {:error, "dob is required"}
-  defp parse_dob(dob) when is_integer(dob), do: {:ok, dob}
-  defp parse_dob(_invalid), do: {:error "dob must be an integer"}
+defp parse_dob(nil), do: {:error, "dob is required"}
+defp parse_dob(dob) when is_integer(dob), do: {:ok, dob}
+defp parse_dob(_invalid), do: {:error "dob must be an integer"}
 
-  defp parse_name(nil), do: {:error, "name is required"}
-  defp parse_name(""), do: parse_name(nil)
-  defp parse_name(name), do: {:ok, name}
+defp parse_name(nil), do: {:error, "name is required"}
+defp parse_name(""), do: parse_name(nil)
+defp parse_name(name), do: {:ok, name}
 ```
 
 
